@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline | Mohit Sharma</title>
+  <meta name="description" content="Career timeline of Mohit Sharma — from intern to release engineering platform owner at Broadcom/VMware.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="site-name">mohit sharma</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">Timeline</a>
+      <a href="projects.html">Projects</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="hero">
+    <h1>Timeline</h1>
+    <p class="tagline">
+      From building Google Tags as an intern to architecting the release engineering platform for VMware's flagship
+      enterprise product &mdash; a 6-year journey through full-stack development, Kubernetes infrastructure,
+      and CI/CD platform engineering.
+    </p>
+  </section>
+
+  <div class="timeline">
+
+    <!-- ── 2026 ── -->
+    <div class="timeline-year">2026</div>
+
+    <div class="timeline-item">
+      <div class="tl-date">Jan &ndash; Mar 2026</div>
+      <div class="tl-title">CI Pipeline Maturity &amp; SDK Proliferation</div>
+      <div class="tl-body">
+        Built managed PR comments, workflow resolver, CI stage splitting, and the credentials management SDK.
+        Developed the Windows Guest Cluster SDK, Jenkins job deduplication, and retry logic.
+        Migrated CI infrastructure to new VKS (VMware Kubernetes Service) clusters.
+        Delivered 50+ JIRA stories in 6 months across VCF 9.1, VCF 9.2, VKr v1.35, and v1.36 release trains.
+      </div>
+    </div>
+
+    <!-- ── 2025 ── -->
+    <div class="timeline-year">2025</div>
+
+    <div class="timeline-item">
+      <div class="tl-date">Oct &ndash; Dec 2025</div>
+      <div class="tl-title">OVA Build Pipelines &amp; Guest Cluster Testing</div>
+      <div class="tl-body">
+        Built end-to-end OVA build pipelines for RHEL and Windows from scratch &mdash; image baker config generation,
+        GoBuild triggering, artifact publishing, and Jenkins monitoring. Created the Lima VM SDK for local OVA validation
+        using goss. Built the Guest Cluster test SDK with parallel execution support via goroutines.
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="tl-date">Jul &ndash; Sep 2025</div>
+      <div class="tl-title">relmctl CLI, Artifactory Automation &amp; Nightly Builds</div>
+      <div class="tl-body">
+        Unified 5+ disparate CLIs into <strong>relmctl</strong> &mdash; a single command-line interface for all
+        release-machinery operations. Built comprehensive Artifactory cleanup automation (cron + on-demand) with
+        Google Chat notifications. Implemented nightly builds on EPC VMs with multi-branch Kubernetes distribution support.
+        Released v1.13.0 and v1.13.1.
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="tl-date">May &ndash; Jun 2025</div>
+      <div class="tl-title">Security Compliance &amp; Carvel Signing</div>
+      <div class="tl-body">
+        Implemented cosign-based container image signing for Carvel packages with certificate verification.
+        Enforced FIPS-only TLS in Carvel tools (ytt, vendir). Built the SRP compliance report generation SDK.
+        Shipped release v1.12.0 with breaking changes for FIPS validation.
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="tl-date">Apr 2025</div>
+      <div class="tl-title">BDD Testscript Framework &amp; Release v1.11.0</div>
+      <div class="tl-body">
+        Built a BDD-style test framework from scratch using Go's txtar format &mdash; validates pipeline configs,
+        FIPS compliance, publish workflows, and pod templates. Shipped release v1.11.0.
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="tl-date">Mar 2025</div>
+      <div class="tl-title">Crane Build System from Scratch</div>
+      <div class="tl-body">
+        Built the complete <code>cayman_go-containerregistry</code> repository &mdash; VMware's patched Crane binary
+        with GoBuild support, SRP compliance, and publish workflows.
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="tl-date">Jan &ndash; Feb 2025</div>
+      <div class="tl-title">GitLab-to-GitHub CI/CD Migration</div>
+      <div class="tl-body">
+        Led the organization-wide migration of all CI/CD infrastructure from GitLab to GitHub Actions.
+        Rebuilt dev CI, post-merge CI, promote pipeline, and internal CI from scratch. Built the Jenkins runner Docker image
+        pipeline using Kaniko. Migrated 8+ Cayman submodule repositories. Zero downtime for 100+ active developers.
+      </div>
+    </div>
+
+    <!-- ── 2024 ── -->
+    <div class="timeline-year">2024</div>
+
+    <div class="timeline-item">
+      <div class="tl-date">Aug &ndash; Dec 2024</div>
+      <div class="tl-title">VMware-to-Broadcom Domain Migration &amp; Platform Foundation</div>
+      <div class="tl-body">
+        Joined the release-machinery team during the Broadcom acquisition of VMware. Led the massive domain migration
+        across every Go module, Jenkins pipeline, Artifactory registry, and CI configuration. Redesigned the GoBuild SDK.
+        Consolidated scattered modules into a unified <code>relm</code> module. Shipped releases v1.6.0 through v1.7.1.
+      </div>
+    </div>
+
+    <!-- ── 2023 ── -->
+    <div class="timeline-year">2023</div>
+
+    <div class="timeline-item">
+      <div class="tl-date">Nov 2023</div>
+      <div class="tl-title">Joined Broadcom through VMware Acquisition</div>
+      <div class="tl-body">
+        VMware was acquired by Broadcom. Continued working on release engineering for VMware Cloud Foundation
+        as part of the new organization.
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="tl-date">Jul &ndash; Dec 2023</div>
+      <div class="tl-title">TKG Build Modernization &mdash; "Off-Bolt" Initiative</div>
+      <div class="tl-body">
+        Led the technical migration of VMware Tanzu Kubernetes Grid from the legacy Bolt build system to Go-based
+        CI tooling. Migrated 5+ components (Contour, Fluent-bit, TKG packages, Harbor, Calico) to Jenkins pipelines
+        with GoBuild integration. Built carvel package build pipelines and early release-machinery functionality.
+      </div>
+    </div>
+
+    <!-- ── 2022 ── -->
+    <div class="timeline-year">2022</div>
+
+    <div class="timeline-item">
+      <div class="tl-date">Aug &ndash; Nov 2022</div>
+      <div class="tl-title">Kubernetes Platform Engineering &amp; Upstream Contribution</div>
+      <div class="tl-body">
+        Built Prow CI infrastructure for core Kubernetes component builds (containerd, etcd, CoreDNS, runc, hcsshim,
+        CNI plugins, cri-tools) on the Calatrava cluster &mdash; 168 commits across test-infra repositories.
+        Contributed upstream Kubernetes fixes to the official K8s 1.25 changelog.
+        Built image promotion tooling and Slack-based build reporting.
+      </div>
+    </div>
+
+    <!-- ── 2020&ndash;2022 ── -->
+    <div class="timeline-year">2020 &ndash; 2022</div>
+
+    <div class="timeline-item">
+      <div class="tl-date">Jan 2020 &ndash; Jul 2022</div>
+      <div class="tl-title">IT AppOps &amp; Internal Tooling at VMware</div>
+      <div class="tl-body">
+        Built <strong>CASSI</strong> &mdash; a full-stack self-service portal (Python Flask + Angular) enabling 1,000+ VMware engineers
+        to provision Kubernetes namespaces, Harbor registries, and TLS certificates with automated approval workflows,
+        Vault integration, and LDAP authentication (121 commits).
+        Automated TAS deployments across 4 datacenters using Concourse CI and Terraform.
+        Built Harbor management tools, a Go-based Firehose-to-LogInsight forwarder, and a container image cloner.
+      </div>
+    </div>
+
+    <!-- ── 2019 ── -->
+    <div class="timeline-year">2019</div>
+
+    <div class="timeline-item">
+      <div class="tl-date">Aug &ndash; Dec 2019</div>
+      <div class="tl-title">Implementation Engineer Intern at Nabler Web Solutions</div>
+      <div class="tl-body">
+        Built <strong>Tagster</strong> &mdash; an automation engine to programmatically create and deploy Google Tags,
+        reducing manual configuration for enterprise websites. Implemented analytics solutions using
+        Google Analytics and Google Tag Manager.
+      </div>
+    </div>
+
+    <!-- ── Education ── -->
+    <div class="timeline-year">Education</div>
+
+    <div class="timeline-item">
+      <div class="tl-date">2017 &ndash; 2020</div>
+      <div class="tl-title">Master of Computer Applications (MCA) &mdash; Storage &amp; Cloud Technology</div>
+      <div class="tl-body">Jain University, Bangalore</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="tl-date">2014 &ndash; 2017</div>
+      <div class="tl-title">Bachelor of Computer Applications (BCA)</div>
+      <div class="tl-body">Jaipur National University, Jaipur</div>
+    </div>
+
+  </div>
+
+  <p class="section-title">Certifications</p>
+  <ul class="cert-list">
+    <li>Certified Kubernetes Administrator (CKA) <span class="cert-issuer">CNCF</span></li>
+    <li>AWS Certified Solutions Architect &mdash; Associate <span class="cert-issuer">AWS</span></li>
+    <li>VMware Cloud Foundation Administrator <span class="cert-issuer">Broadcom &middot; 2025</span></li>
+  </ul>
+
+</main>
+
+<footer>
+  &copy; 2026 Mohit Sharma &middot; Bangalore, India
+</footer>
+
+</body>
+</html>

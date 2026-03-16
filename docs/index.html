@@ -1,62 +1,129 @@
 <!DOCTYPE html>
-<html>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-.bgimg {
-  background-image: url('./Background.jpg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
-
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
-
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohit Sharma</title>
+  <meta name="description" content="Software Engineer specializing in Release Engineering, CI/CD Platforms, Kubernetes, and Go at Broadcom (VMware).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<div class="bgimg">
-  <div class="topleft">
-    <p>Mohit Sharma</p>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="site-name">mohit sharma</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">Timeline</a>
+      <a href="projects.html">Projects</a>
+    </div>
   </div>
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p>45 days left</p>
+</nav>
+
+<main>
+  <section class="hero">
+    <h1>Hi, I'm Mohit Sharma</h1>
+    <p class="tagline">Software Engineer &mdash; Release Engineering, CI/CD Platforms &amp; Kubernetes Infrastructure</p>
+    <p class="intro">
+      I build the systems that ship software. Currently at <a href="https://www.broadcom.com/">Broadcom</a> (VMware Business Unit),
+      I architect and maintain <strong>release-machinery</strong> &mdash; the central CI/CD platform powering the build, test, and release
+      lifecycle for <a href="https://www.vmware.com/products/cloud-foundation">VMware Cloud Foundation</a>'s Kubernetes Distribution,
+      a flagship enterprise hybrid-cloud product deployed by thousands of customers globally.
+    </p>
+  </section>
+
+  <p class="section-title">Current Roles</p>
+  <ul class="role-list">
+    <li class="role-item">
+      <span class="bullet">&rsaquo;</span>
+      <span class="role-text">Software Engineer &mdash; Release Engineering &amp; Platform Infrastructure at <a href="https://www.broadcom.com/">Broadcom</a> <span class="role-org">(VMware Cloud Foundation)</span></span>
+    </li>
+    <li class="role-item">
+      <span class="bullet">&rsaquo;</span>
+      <span class="role-text">Primary maintainer of <strong>release-machinery</strong> &mdash; Go-based CI/CD platform with 20 SDKs, 12 releases shipped</span>
+    </li>
+    <li class="role-item">
+      <span class="bullet">&rsaquo;</span>
+      <span class="role-text">CKA &amp; AWS Solutions Architect certified</span>
+    </li>
+  </ul>
+
+  <p class="section-title">Career Highlights</p>
+  <ul class="role-list">
+    <li class="role-item">
+      <span class="bullet">&rsaquo;</span>
+      <span class="role-text">Architected a release engineering platform with <strong>840+ commits</strong> and <strong>280+ merged PRs</strong> across 15+ repositories</span>
+    </li>
+    <li class="role-item">
+      <span class="bullet">&rsaquo;</span>
+      <span class="role-text">Led the organization-wide <strong>GitLab-to-GitHub CI/CD migration</strong> with zero downtime for 100+ developers</span>
+    </li>
+    <li class="role-item">
+      <span class="bullet">&rsaquo;</span>
+      <span class="role-text">Designed and built <strong>20 reusable Go SDKs</strong> adopted across 5+ repos by multiple engineering teams</span>
+    </li>
+    <li class="role-item">
+      <span class="bullet">&rsaquo;</span>
+      <span class="role-text">Built <strong>OVA build pipelines from scratch</strong> for RHEL &amp; Windows &mdash; image baking through testing to publishing</span>
+    </li>
+    <li class="role-item">
+      <span class="bullet">&rsaquo;</span>
+      <span class="role-text">Previously built <strong>Prow CI infrastructure</strong> for Kubernetes upstream and a <strong>self-service portal</strong> for 1,000+ VMware engineers</span>
+    </li>
+    <li class="role-item">
+      <span class="bullet">&rsaquo;</span>
+      <span class="role-text">Contributed to <strong>upstream Kubernetes</strong> (K8s 1.25 changelog fixes)</span>
+    </li>
+  </ul>
+
+  <p class="section-title">By The Numbers</p>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <span class="stat-number">3,200+</span>
+      <span class="stat-label">Total Commits</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">60+</span>
+      <span class="stat-label">Repositories</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">20</span>
+      <span class="stat-label">Go SDKs Built</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">12</span>
+      <span class="stat-label">Releases Shipped</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">280+</span>
+      <span class="stat-label">Merged PRs</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">6+</span>
+      <span class="stat-label">Years Experience</span>
+    </div>
   </div>
-  <div class="bottomleft">
-    <p> <a href="mailto:mohit94614@gmail.com">Stay Connected</a></p>
+
+  <p class="section-title">Find Me</p>
+  <div class="social-links">
+    <a href="https://github.com/mohitsharma-in" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/knowmohit" target="_blank">LinkedIn</a>
+    <a href="mailto:mohit94614@gmail.com">Email</a>
   </div>
-</div>
+
+  <p style="margin-top:2rem; font-size:0.88rem; color:var(--text-muted);">
+    For a detailed view of my professional journey and milestones, check out my
+    <a href="about.html">timeline</a>. You can also explore my
+    <a href="projects.html">key projects</a> and their impact.
+  </p>
+</main>
+
+<footer>
+  &copy; 2026 Mohit Sharma &middot; Bangalore, India
+</footer>
 
 </body>
 </html>

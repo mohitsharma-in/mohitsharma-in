@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Mohit Sharma</title>
+  <meta name="description" content="Key projects and technical contributions by Mohit Sharma — release-machinery, CI/CD platforms, Kubernetes infrastructure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="site-name">mohit sharma</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">Timeline</a>
+      <a href="projects.html" class="active">Projects</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="hero">
+    <h1>Projects</h1>
+    <p class="tagline">
+      Key systems I've designed, built, and shipped &mdash; from CI/CD platforms powering enterprise
+      Kubernetes distributions to self-service portals serving 1,000+ engineers.
+    </p>
+  </section>
+
+  <!-- ── Release Machinery ── -->
+  <p class="section-title">Platform Engineering</p>
+
+  <div class="project-card">
+    <div class="proj-header">
+      <span class="proj-title">Release Machinery</span>
+      <span class="proj-period">2023 &ndash; present</span>
+    </div>
+    <div class="proj-desc">
+      The central CI/CD and release engineering platform I architected and maintain as the primary contributor.
+      Powers the entire build &rarr; test &rarr; publish &rarr; release lifecycle for VMware's Kubernetes Distribution (VKD),
+      a core component of VMware Cloud Foundation deployed by thousands of enterprise customers.
+      840+ commits, 280+ merged PRs, 20 reusable Go SDKs, 12 production releases shipped.
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">Go</span>
+      <span class="proj-tag">Jenkins</span>
+      <span class="proj-tag">GitHub Actions</span>
+      <span class="proj-tag">Kubernetes</span>
+      <span class="proj-tag">Docker</span>
+      <span class="proj-tag">Artifactory</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="proj-header">
+      <span class="proj-title">GitLab-to-GitHub CI/CD Migration</span>
+      <span class="proj-period">Jan &ndash; Feb 2025</span>
+    </div>
+    <div class="proj-desc">
+      Led the organization-wide migration of all CI/CD infrastructure from GitLab to GitHub Actions.
+      Rebuilt dev, post-merge, promote, and internal pipelines from scratch. Migrated credentials, webhooks,
+      Jenkins integrations, and 8+ Cayman submodule repositories. Zero downtime for 100+ active developers.
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">GitHub Actions</span>
+      <span class="proj-tag">GitLab CI</span>
+      <span class="proj-tag">Jenkins</span>
+      <span class="proj-tag">Kaniko</span>
+      <span class="proj-tag">Docker</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="proj-header">
+      <span class="proj-title">OVA Build Pipelines (RHEL &amp; Windows)</span>
+      <span class="proj-period">Oct 2025 &ndash; present</span>
+    </div>
+    <div class="proj-desc">
+      Built complete automated pipelines for RHEL and Windows OVA images from scratch &mdash;
+      image baker config generation, GoBuild triggering, artifact publishing, Jenkins monitoring,
+      Lima VM validation with goss specs, and parallel guest cluster install/upgrade testing.
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">Go</span>
+      <span class="proj-tag">Jenkins</span>
+      <span class="proj-tag">GoBuild</span>
+      <span class="proj-tag">Lima VM</span>
+      <span class="proj-tag">Goss</span>
+      <span class="proj-tag">KIND</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="proj-header">
+      <span class="proj-title">Nightly Build System</span>
+      <span class="proj-period">Jul &ndash; Sep 2025</span>
+    </div>
+    <div class="proj-desc">
+      Designed and implemented automated nightly builds on EPC VMs with multi-branch Kubernetes distribution support,
+      SRP compliance report generation, CoreK8s validation using KIND, and Google Chat notifications.
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">Go</span>
+      <span class="proj-tag">GitHub Actions</span>
+      <span class="proj-tag">KIND</span>
+      <span class="proj-tag">Podman</span>
+      <span class="proj-tag">SRP</span>
+    </div>
+  </div>
+
+  <!-- ── SDKs ── -->
+  <p class="section-title">SDK Portfolio &mdash; 20 Go SDKs</p>
+
+  <div class="project-card">
+    <div class="proj-header">
+      <span class="proj-title">Jenkins SDK</span>
+      <span class="proj-period">Core SDK</span>
+    </div>
+    <div class="proj-desc">
+      Trigger jobs on local and remote Jenkins instances, watch with custom poll intervals, abort running jobs,
+      retrieve artifacts, detect duplicate jobs to prevent wasted CI resources, and styled log output.
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">Go</span>
+      <span class="proj-tag">Jenkins API</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="proj-header">
+      <span class="proj-title">SRP Compliance SDK</span>
+      <span class="proj-period">Core SDK</span>
+    </div>
+    <div class="proj-desc">
+      Generate security compliance reports, query the SRP platform with percentage-based scores,
+      post results to GitHub PR commit status, and manage API tokens. Covers SRP Level Zero integration.
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">Go</span>
+      <span class="proj-tag">Cosign</span>
+      <span class="proj-tag">FIPS</span>
+      <span class="proj-tag">BlackDuck</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="proj-header">
+      <span class="proj-title">Artifactory SDK</span>
+      <span class="proj-period">Core SDK</span>
+    </div>
+    <div class="proj-desc">
+      Cron-based and on-demand cleanup automation, OCI image pruning, AQL queries for artifact discovery,
+      token-based authentication, and property management. Reclaimed significant storage with GChat notifications.
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">Go</span>
+      <span class="proj-tag">JFrog Artifactory</span>
+      <span class="proj-tag">AQL</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="proj-header">
+      <span class="proj-title">+ 17 more SDKs</span>
+      <span class="proj-period">2024 &ndash; 2026</span>
+    </div>
+    <div class="proj-desc">
+      GoBuild SDK, OVA Build SDK, Lima VM SDK, Guest Cluster Test SDK, Windows GC SDK,
+      Carvel Signing SDK, Carvel Packaging SDK, Checkout Helper, Managed PR Comments,
+      Credentials Management, Assert CI Folder, Desperado SDK, GitHub Repo Content SDK,
+      RHEL Install Test SDK, GChat User Lookup, Push Event Handler, and Workflow Resolver.
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">Go</span>
+      <span class="proj-tag">Kubernetes</span>
+      <span class="proj-tag">Docker</span>
+      <span class="proj-tag">Cosign</span>
+    </div>
+  </div>
+
+  <!-- ── Earlier Projects ── -->
+  <p class="section-title">Earlier Work</p>
+
+  <div class="project-card">
+    <div class="proj-header">
+      <span class="proj-title">Off-Bolt Initiative &mdash; TKG Build Modernization</span>
+      <span class="proj-period">Jul &ndash; Dec 2023</span>
+    </div>
+    <div class="proj-desc">
+      Led the migration of VMware Tanzu Kubernetes Grid from the legacy Bolt build system to Go-based CI tooling.
+      Migrated 5+ components (Contour, Fluent-bit, TKG packages, Harbor, Calico) with carvel package build
+      pipelines and automated constellation MR generation.
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">Go</span>
+      <span class="proj-tag">Jenkins</span>
+      <span class="proj-tag">GoBuild</span>
+      <span class="proj-tag">Carvel</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="proj-header">
+      <span class="proj-title">Calatrava CI Cluster &amp; Prow Infrastructure</span>
+      <span class="proj-period">Aug &ndash; Nov 2022</span>
+    </div>
+    <div class="proj-desc">
+      Built Prow CI infrastructure for 7 core Kubernetes components (containerd, etcd, CoreDNS, runc, hcsshim,
+      CNI plugins, cri-tools) on VMware's private Calatrava cluster. 168 commits across test-infra repositories.
+      Image promotion tooling and Slack-based build reporting.
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">Go</span>
+      <span class="proj-tag">Prow</span>
+      <span class="proj-tag">Kubernetes</span>
+      <span class="proj-tag">Docker</span>
+      <span class="proj-tag">GCS</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="proj-header">
+      <span class="proj-title">CASSI &mdash; Self-Service Portal</span>
+      <span class="proj-period">2020 &ndash; 2022</span>
+    </div>
+    <div class="proj-desc">
+      Full-stack web application (Python Flask + Angular) enabling 1,000+ VMware engineers to self-provision
+      Kubernetes namespaces, Harbor container registries, and TLS certificates with automated approval workflows,
+      HashiCorp Vault integration, and ESP/LDAP authentication. 121 commits.
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">Python</span>
+      <span class="proj-tag">Flask</span>
+      <span class="proj-tag">Angular</span>
+      <span class="proj-tag">Kubernetes</span>
+      <span class="proj-tag">Vault</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="proj-header">
+      <span class="proj-title">TAS Automation</span>
+      <span class="proj-period">2020 &ndash; 2022</span>
+    </div>
+    <div class="proj-desc">
+      Infrastructure-as-Code automation for deploying Tanzu Application Service across 4 datacenters
+      using Concourse CI pipelines and Terraform. Managed 5 platform tiles (TAS, RabbitMQ, Spring Cloud Services,
+      Wavefront, Metrics Store).
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">Concourse CI</span>
+      <span class="proj-tag">Terraform</span>
+      <span class="proj-tag">Cloud Foundry</span>
+      <span class="proj-tag">Shell</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="proj-header">
+      <span class="proj-title">Harbor Registry Tooling</span>
+      <span class="proj-period">2020 &ndash; 2021</span>
+    </div>
+    <div class="proj-desc">
+      Suite of tools for VMware's internal Harbor container registry: repository manager with approval workflows,
+      bulk user migration CLI, CDN purge automation, monitoring dashboard, and storage replication scripts.
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">Python</span>
+      <span class="proj-tag">Harbor</span>
+      <span class="proj-tag">Angular</span>
+      <span class="proj-tag">Docker</span>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="proj-header">
+      <span class="proj-title">Upstream Kubernetes Contribution</span>
+      <span class="proj-period">Aug 2022</span>
+    </div>
+    <div class="proj-desc">
+      Fixed broken links in the official Kubernetes 1.25 release changelog. Direct contribution to the
+      upstream Kubernetes project.
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">Go</span>
+      <span class="proj-tag">Kubernetes</span>
+      <span class="proj-tag">Open Source</span>
+    </div>
+  </div>
+
+  <!-- ── Skills ── -->
+  <p class="section-title">Technical Skills</p>
+  <div class="skills-section">
+    <div class="skill-group">
+      <div class="skill-label">Languages</div>
+      <div class="skill-items">
+        <span class="proj-tag">Go (primary)</span>
+        <span class="proj-tag">Python</span>
+        <span class="proj-tag">Groovy</span>
+        <span class="proj-tag">Shell/Bash</span>
+        <span class="proj-tag">TypeScript</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">CI/CD</div>
+      <div class="skill-items">
+        <span class="proj-tag">Jenkins</span>
+        <span class="proj-tag">GitHub Actions</span>
+        <span class="proj-tag">GitLab CI</span>
+        <span class="proj-tag">Prow</span>
+        <span class="proj-tag">Concourse</span>
+        <span class="proj-tag">GoBuild</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">Containers &amp; Kubernetes</div>
+      <div class="skill-items">
+        <span class="proj-tag">Kubernetes</span>
+        <span class="proj-tag">Docker</span>
+        <span class="proj-tag">Podman</span>
+        <span class="proj-tag">Kaniko</span>
+        <span class="proj-tag">KIND</span>
+        <span class="proj-tag">Helm</span>
+        <span class="proj-tag">Carvel</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">Cloud &amp; Infrastructure</div>
+      <div class="skill-items">
+        <span class="proj-tag">VMware vSphere</span>
+        <span class="proj-tag">VCF</span>
+        <span class="proj-tag">VKS</span>
+        <span class="proj-tag">AWS</span>
+        <span class="proj-tag">Terraform</span>
+        <span class="proj-tag">Ansible</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">Security</div>
+      <div class="skill-items">
+        <span class="proj-tag">Cosign</span>
+        <span class="proj-tag">BlackDuck</span>
+        <span class="proj-tag">FIPS</span>
+        <span class="proj-tag">SRP Compliance</span>
+        <span class="proj-tag">HashiCorp Vault</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">Tools</div>
+      <div class="skill-items">
+        <span class="proj-tag">JFrog Artifactory</span>
+        <span class="proj-tag">Harbor</span>
+        <span class="proj-tag">Devbox/Nix</span>
+        <span class="proj-tag">Skopeo</span>
+        <span class="proj-tag">Crane</span>
+        <span class="proj-tag">Goss</span>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Mohit Sharma &middot; Bangalore, India
+</footer>
+
+</body>
+</html>
